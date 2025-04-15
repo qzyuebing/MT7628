@@ -33,10 +33,10 @@ config mmdvmhost 'General'
 	option RFModeHang '10'
 
 config mmdvmhost 'Modem'
-	option Port '/dev/ttyUSB0'
 	option RXOffset '0'
 	option TXOffset '0'
 	option RSSIMappingFile '/etc/mmdvm/RSSI.dat'
+	option Port 'NullModem'
 
 config mmdvmhost 'DStar_Network'
 	option Enable '0'
@@ -45,9 +45,9 @@ config mmdvmhost 'NXDN_Network'
 	option Enable '0'
 
 config mmdvmhost 'DMR_Network'
-	option Address '4601.master.brandmeister.network'
 	option Password 'password'
 	option Enable '0'
+	option Address '4602.master.brandmeister.network'
 
 config mmdvmhost 'Info'
 	option Power '1'
